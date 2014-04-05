@@ -147,10 +147,10 @@ func (api *API) AddResource(resource interface{}, paths ...string) {
 }
 
 // Start causes the API to begin serving requests on the given port.
-func (api *API) Start(port int) error {
+func (api *API) Start(ip string, port int) error {
 	if !api.muxInitialized {
 		return errors.New("You must add at least one resource to this API.")
 	}
-	portString := fmt.Sprintf(":%d", port)
+	portString := fmt.Sprintf("%s:%d", ip, port)
 	return http.ListenAndServe(portString, api.Mux())
 }
