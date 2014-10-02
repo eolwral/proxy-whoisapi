@@ -1,4 +1,4 @@
-A simple GeoIP API proxy for OS Monitor   
+A simple GeoIP API proxy for OS Monitor [![Build Status](https://drone.io/github.com/eolwral/proxy-whoisapi/status.png)](https://drone.io/github.com/eolwral/proxy-whoisapi/latest)
 ==============
 
 ### Introduction
